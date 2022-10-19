@@ -1,7 +1,14 @@
-body {
-    background-color: $backgroundColor;
-}
 
+.container {
+    background: radial-gradient(circle, rgba(30, 46, 67, 1) 0%, rgba(11, 14, 26, 1) 100%);
+    min-width: 320px;
+    max-width: 767px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .welcome {
     height: 100%;
@@ -9,6 +16,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 15px;
 
     &__heading {
         display: none;    
@@ -16,6 +25,66 @@ body {
 
     &__welcoming {
         color: $welcomeColor;
-        align-self: center;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        animation: welcomeJump 2s ease 0s 1 normal none;
+
     }
+
+    &__link {
+        text-decoration: none;
+        font-size: 36px;
+        color: #ffffffa8;
+    }
+    
+    &__button {
+        margin: 50px 10px;
+        padding: 20px 60px;
+        border: transparent;
+        border-radius: 40px;
+        background: radial-gradient(circle, rgba(38, 50, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        box-shadow: 0px 0px 0px 0px rgba(168, 205, 255, 1);        
+        animation: buttonJump 5s cubic-bezier(.66,0,.72,.5) 0s 1 normal none, buttonAtt 2s ease 5s infinite normal none;
+
+
+
+    }
+}
+
+// radial-gradient(circle, rgba(38, 50, 84, 1) 0%, rgba(0, 0, 0, 1) 100%)
+
+@keyframes buttonAtt {
+	0% {
+		box-shadow: 0px 0px 0px 0px rgba(168, 205, 255, 1);       
+	}
+
+	50% {
+        box-shadow: 0px 0px 47px -10px rgba(168, 205, 255, 1);       	}
+
+	100% {
+        box-shadow: 0px 0px 0px 0px rgba(168, 205, 255, 1); 	}
+}
+
+@keyframes buttonJump {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes welcomeJump {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

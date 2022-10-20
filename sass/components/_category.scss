@@ -1,0 +1,141 @@
+
+.container {
+    background: radial-gradient(circle, rgba(30, 46, 67, 1) 0%, rgba(11, 14, 26, 1) 100%);
+    min-width: 320px;
+    max-width: 767px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-image: url(./images/spac-bg.png);
+    
+}
+
+.category {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+
+    &__heading {
+        display: none;    
+    }
+
+    &__welcoming {
+        color: $welcomeColor;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+        margin: 0 0 50px 0;
+        animation: welcomeJump 1s ease 0s 1 normal none;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 36px;
+        color: #ffffffa8;
+
+        &--back {
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffffffa8;
+        }
+    }
+
+    &__button-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    
+    &__button {
+        width: 300px;
+        margin: 20px;
+        padding: 20px 60px;
+        border: transparent;
+        border-radius: 40px;
+        background: radial-gradient(circle, rgba(38, 50, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        box-shadow: 0px 0px 0px 0px rgba(168, 205, 255, 1);
+        transition: box-shadow 1s ease;
+
+        &:hover {
+            box-shadow: 0px 0px 75px 0px rgb(2, 141, 255)
+        }
+    }
+}
+
+.jump-one {
+    animation: buttonJump 2s cubic-bezier(.66,0,.72,.5) 0s 1 normal none;
+}
+.jump-two {
+    animation: buttonJump 3s cubic-bezier(.66,0,.72,.5) 0s 1 normal none;
+}
+.jump-three {
+    animation: buttonJump 4s cubic-bezier(.66,0,.72,.5) 0s 1 normal none;
+}
+.jump-four {
+    font-size: 24px;
+    margin-top: 50px;
+    animation: buttonJump 5s cubic-bezier(.66,0,.72,.5) 0s 1 normal none;
+}
+
+
+
+
+
+@media all and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+        max-width: 1199px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        min-width: 1200px;
+        max-width: none;
+    }
+}
+
+
+@keyframes buttonAtt {
+	0% {
+		box-shadow: 0px 0px 0px -25px rgb(108, 171, 255);       
+	}
+
+	50% {
+        box-shadow: 0px 0px 75px 0px rgb(255, 2, 2);       	}
+
+	100% {
+        box-shadow: 0px 0px 0px -25px rgb(113, 175, 255); 	}
+}
+
+@keyframes buttonJump {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes welcomeJump {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

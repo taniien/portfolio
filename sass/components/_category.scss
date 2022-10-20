@@ -146,9 +146,11 @@
 
 .footer {
     width: 100%;
-    padding: 15px;
+    padding: 15px 15px 45px;
     border-top: 3px solid $footerBorderColor;
     color: $footerFontColor;
+    animation: footerShowUp 5s ease 0s 1 normal none;
+
 
     &__text {
         text-align: center;

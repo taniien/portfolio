@@ -178,8 +178,8 @@ body {
   background: radial-gradient(circle, rgb(38, 50, 84) 0%, rgb(0, 0, 0) 100%);
   -webkit-box-shadow: 0px 0px 0px 0px rgb(168, 205, 255);
           box-shadow: 0px 0px 0px 0px rgb(168, 205, 255);
-  -webkit-animation: buttonJump 3s cubic-bezier(0.85, 0, 0.25, 1.25) 0s 1 normal none, buttonAtt 2s ease 5s infinite normal none;
-          animation: buttonJump 3s cubic-bezier(0.85, 0, 0.25, 1.25) 0s 1 normal none, buttonAtt 2s ease 5s infinite normal none;
+  -webkit-animation: buttonJump 3s cubic-bezier(0.85, 0, 0.25, 1.25) 0s 1 normal none, buttonAtt 2.5s ease 3s infinite normal none;
+          animation: buttonJump 3s cubic-bezier(0.85, 0, 0.25, 1.25) 0s 1 normal none, buttonAtt 2.5s ease 3s infinite normal none;
 }
 
 .container {

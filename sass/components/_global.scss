@@ -4,4 +4,7 @@ padding: 0;}
 img {display:block;}
 ul {padding: 0; margin: 0;}
 li {list-style: none;}
-body {font-family: 'Cabin', sans-serif;}
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: $darkBackgroundColor;
+}

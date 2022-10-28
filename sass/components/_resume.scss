@@ -1,0 +1,235 @@
+// RESUME PART ==============================
+
+
+.resume-container {
+    display: flex;
+    flex-direction: row-reverse;
+    // justify-content: center;
+    width: 1200px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: -45px -45px 50px -20px $resumeShadowColor, 0px 0px 75px 0px $resumeShadowColorSecond;     
+    border-radius: 45px; 
+    overflow: hidden;
+    animation: welcomeJump 3s cubic-bezier(.5,0,.25,1.25) 0s 1 normal none;
+}
+
+
+.main {
+    border: 1px solid navy;
+    padding: 75px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 1700px;
+
+    &__description-box {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        padding: 25px;
+        border-radius: 25px;
+        margin: 0 0 25px 0;
+        box-shadow: 0px 9px 28px -7px rgba(0, 6, 82, 1);
+        transition-property: box-shadow;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 0.5s;
+        &:hover {
+            box-shadow: 0px 9px 28px 10px rgb(8, 0, 82);
+
+        }
+
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #595959;
+        padding: 0 0 10px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    &__projects {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0px 9px 28px -7px rgba(0, 6, 82, 1);
+        border-radius: 15px;
+        width: 260px;
+    }
+
+      &__projects-link {
+        transition-property: font-weight;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+    &__work {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 50px;
+    }
+
+    &__work-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__education {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 50px;
+        & h3, h4, p {
+            padding-left: 15px;
+        }
+
+    }
+
+    &__training {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 50px;
+
+    }
+
+    &__training-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-left: 15px;
+    }
+
+    &__hobby {
+        padding: 0 50px;
+
+    }
+}
+
+
+
+.header-primary {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+
+  .header-secondary {
+    color: #ffffff;
+  }
+
+  .contact-links {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .list-primary {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .list-secondary {
+    color: #fb6d3a;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 14px;
+  }
+
+  .list-primary-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    text-decoration: none;
+  }
+
+  .list-secondary-item {
+    color: #ffffff;
+  }
+
+
+  .job-position {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .highlight {
+    color: #fb6d3a;
+    font-size: 18px;
+  }
+  .job-time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+  }
+  .blacking {
+    color: black;
+    font-size: 14px;
+  }
+  .job-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    padding-left: 15px;
+  }
+  .uni-subject {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .aside {
+    width: 370px;
+    height: 1700px;
+    background: $bgResumeAsideGradient;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: baseline;
+
+  
+    &__pic {
+        margin: 50px 0 0 0;
+        border-radius: 50px;
+        box-shadow: 0px 0px 15px 0px #a0a5ff
+        ;
+        transition-property: box-shadow;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 0.5s;
+        &:hover {
+            box-shadow: 0px 0px 30px 15px #a0d9ff;
+
+        }
+    }
+
+    &__block {
+        padding: 0 0 0 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
